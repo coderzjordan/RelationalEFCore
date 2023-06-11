@@ -21,7 +21,7 @@ namespace RelationalEFCore.Data
              HasOne(bc => bc.Category).WithMany(b => b.BookCategories).HasForeignKey(bc => bc.CategoryId);
 
         }
-
+        // tet
         public DbSet<Book> Books { get; set; }
         public DbSet<Category> Categories { get; set; }
        public DbSet<BookCategory> BookCategories { get; set; }
